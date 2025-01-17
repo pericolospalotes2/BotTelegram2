@@ -28,9 +28,15 @@ if($text==='/start'){
     $menuMessage .= "3️⃣ Enviar Temario en pdf ❗️ \n";
 
     $telegram->sendMessage($chatId,$menuMessage);
+
 }elseif($text === '1' ){
     $informacion = 'dfdldshfsdhfsfhdsñhfdsfhsdfsdhfsdfdfsdfdfsdfsdfsdf';
     $telegram->sendMessage($chatId,$informacion);
+
+}elseif($text === '3' ){
+
+    $pdfpath = 'assets/Estrategia Incursiones Cuánticas - Valhalla.pdf';
+    $telegram->sendDocument($chatId, new CURLFile(realpath($pdfpath)));
 
 
 }elseif($text === 'Hola'){
