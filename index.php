@@ -15,6 +15,10 @@ $chatId = $update->message->chat->id;
 
 $text = $update->message->text;
 
+if($text==='Hola'){
+    $telegram->sendMessage($chatId,"Hola como estas");
+    
+}
 
 }
 
