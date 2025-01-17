@@ -14,7 +14,17 @@ if (isset($update->message->text)){
 $chatId = $update->message->chat->id;
 $text = $update->message->text;
 
-if($text==='Hola'){
+if($text==='/start'){
+
+    $message="¡Bienvenido! Soy el Bot de TodoFOE.com Puedes usar los siguientes comandos:\n\n";
+    $message.="/start - Iniciar Conversación\n";
+    $message.="/menu - Mostrar menú de Opciones\n";
+
+    $telegram->sendMessage($chatId,$message);
+    
+
+
+}elseif($text==='Hola'){
     $telegram->sendMessage($chatId,"Hola como estas");
     
 }else{
