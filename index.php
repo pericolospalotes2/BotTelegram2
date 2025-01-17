@@ -28,7 +28,12 @@ if($text==='/start'){
     $menuMessage .= "3️⃣ Enviar Temario en pdf ❗️ \n";
 
     $telegram->sendMessage($chatId,$menuMessage);
-}elseif($text==='Hola'){
+}elseif($text === '1' ){
+    $informacion = 'dfdldshfsdhfsfhdsñhfdsfhsdfsdhfsdfdfsdfdfsdfsdfsdf';
+    $telegram->sendMessage($chatId,$informacion);
+
+
+}elseif($text === 'Hola'){
     $telegram->sendMessage($chatId,"Hola como estas");
     
 }else{
