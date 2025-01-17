@@ -21,7 +21,14 @@ if($text==='/start'){
     $message.="/menu - Mostrar menú de Opciones\n";
 
     $telegram->sendMessage($chatId,$message);
-    
+}elseif($text==='/menu'){
+    $menuMessage = "Aquí está el Menú de Opciones:\n";
+    $menuMessage .= "1. Información del Curso. \n";
+    $menuMessage .= "2. Ubicación del Local. \n";
+    $menuMessage .= "3. Enviar Temario en pdf \n";
+
+    $telegram->sendMessage($chatId,$menuMessage);
+}
 
 
 }elseif($text==='Hola'){
