@@ -22,10 +22,10 @@ if($text==='/start'){
 
     $telegram->sendMessage($chatId,$message);
 }elseif($text==='/menu'){
-    $menuMessage = "Aquí está el Menú de Opciones:\n";
-    $menuMessage .= "1. Información del Curso. \n";
-    $menuMessage .= "2. Ubicación del Local. \n";
-    $menuMessage .= "3. Enviar Temario en pdf \n";
+    $menuMessage = "Aquí está el Menú de Opciones, eligir una:\n\n";
+    $menuMessage .= "1️⃣ Información del Curso. ❗️ \n";
+    $menuMessage .= "2️⃣ Ubicación del Local. ❗️ \n";
+    $menuMessage .= "3️⃣ Enviar Temario en pdf ❗️ \n";
 
     $telegram->sendMessage($chatId,$menuMessage);
 }elseif($text==='Hola'){
