@@ -33,11 +33,18 @@ if($text==='/start'){
     $informacion = 'dfdldshfsdhfsfhdsñhfdsfhsdfsdhfsdfdfsdfdfsdfsdfsdf';
     $telegram->sendMessage($chatId,$informacion);
 
-}elseif($text === '/evento fauna' ){
+}elseif($text === '3' ){
 
     $pdfpath = 'assets/Estrategia Incursiones Cuánticas - Valhalla.pdf';
     $telegram->sendDocument($chatId, new CURLFile(realpath($pdfpath)));
 
+}elseif($text === '5'){
+
+$message = "Vídeo del Evento Actual";
+$telegram->sendMessage($chatId,$message);
+
+$linkyoutube = 'https://www.youtube.com/watch?v=w0dYPmXJB9I';
+$telegram->sendMessage($chatId,$linkyoutube);
 
 }elseif($text === 'Hola'){
     $telegram->sendMessage($chatId,"Hola como estas");
