@@ -33,7 +33,7 @@ if($text==='/start'){
     $informacion = 'dfdldshfsdhfsfhdsñhfdsfhsdfsdhfsdfdfsdfdfsdfsdfsdf';
     $telegram->sendMessage($chatId,$informacion);
 
-}elseif($text === '3' ){
+}elseif($text === '/evento fauna' ){
 
     $pdfpath = 'assets/Estrategia Incursiones Cuánticas - Valhalla.pdf';
     $telegram->sendDocument($chatId, new CURLFile(realpath($pdfpath)));
